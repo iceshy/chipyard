@@ -15,6 +15,7 @@ trap clean EXIT
 
 cd $LOCAL_CHIPYARD_DIR
 ./scripts/init-submodules-no-riscv-tools.sh
+./scripts/firesim-setup.sh
 cd $LOCAL_CHIPYARD_DIR/sims/firesim/sim/firesim-lib/src/main/cc/lib
 git submodule update --init elfutils libdwarf
 cd $LOCAL_CHIPYARD_DIR/sims/firesim
